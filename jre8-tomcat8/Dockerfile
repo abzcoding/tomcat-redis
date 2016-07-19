@@ -8,8 +8,8 @@ ENV REDIS_PORT 6379
 
 RUN \
     cd /usr/local/tomcat/lib && \
-    wget -q http://central.maven.org/maven2/redis/clients/jedis/2.5.2/jedis-2.5.2.jar && \
-    wget -q http://central.maven.org/maven2/org/apache/commons/commons-pool2/2.2/commons-pool2-2.2.jar
+    wget -q http://central.maven.org/maven2/redis/clients/jedis/2.8.1/jedis-2.8.1.jar && \
+    wget -q http://central.maven.org/maven2/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar
 
 # used https://github.com/pivotalsoftware/session-managers.git
 COPY redis-store-1.3.0.BUILD-SNAPSHOT.jar /usr/local/tomcat/lib/redis-store-1.3.0.BUILD-SNAPSHOT.jar
